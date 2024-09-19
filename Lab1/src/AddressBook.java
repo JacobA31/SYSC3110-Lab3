@@ -16,6 +16,12 @@ public class AddressBook {
         buddyInfo.remove(removeBuddyInfo);
     }
 
+    public int getSize() {
+        return buddyInfo.size();
+    }
+
+    public static void printBuddys(AddressBook addressBook) {System.out.println(addressBook.getSize());}
+
     public static void main(String[] args)
     {
         BuddyInfo buddyInfo1 = new BuddyInfo("Jacob", "666 Riverflow", 555);
@@ -24,6 +30,7 @@ public class AddressBook {
         addressBook.addBuddy(buddyInfo1);
         addressBook.removeBuddy(buddyInfo1);
         addressBook.addBuddy(buddyInfo2);
+        printBuddys(addressBook);
     }
 
 }
