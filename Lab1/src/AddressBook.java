@@ -24,7 +24,6 @@ public class AddressBook {
         addressBook.addBuddy(buddyInfo1);
         addressBook.removeBuddy(buddyInfo1);
         addressBook.addBuddy(buddyInfo2);
-        System.out.println(addressBook.buddyInfo.get(0));
     }
 
 }
